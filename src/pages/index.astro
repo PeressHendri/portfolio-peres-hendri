@@ -1,0 +1,544 @@
+---
+// Import the global CSS
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peres Hendri Virgiawan - Portfolio</title>
+    <meta name="description" content="Portfolio website Peres Hendri Virgiawan - Web Developer & Designer yang passionate dalam menciptakan pengalaman digital yang luar biasa">
+    <meta name="keywords" content="web developer, designer, portfolio, peres hendri, frontend, backend, fullstack, indonesia">
+    <meta name="author" content="Peres Hendri Virgiawan">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pereshendri.com/">
+    <meta property="og:title" content="Peres Hendri Virgiawan - Portfolio">
+    <meta property="og:description" content="Web Developer & Designer yang passionate dalam menciptakan pengalaman digital yang luar biasa">
+    <meta property="og:image" content="/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pereshendri.com/">
+    <meta property="twitter:title" content="Peres Hendri Virgiawan - Portfolio">
+    <meta property="twitter:description" content="Web Developer & Designer yang passionate dalam menciptakan pengalaman digital yang luar biasa">
+    <meta property="twitter:image" content="/images/og-image.jpg">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="msapplication-TileColor" content="#3b82f6">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Peres Portfolio">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="binary-container"></div>
+        <div class="letters-container"></div>
+        <div class="matrix-background"></div>
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="loading-text">
+                <h2>Portofolio Peres Hendri</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Main Content (Hidden during loading) -->
+    <div class="main-content" id="mainContent">
+        <div class="scroll-progress"></div>
+    
+    <!-- Global Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <h3>Menu</h3>
+                <button class="mobile-menu-close" aria-label="Close mobile menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li class="theme-toggle-item">
+                    <div class="mobile-theme-toggle">
+                        <span>Theme</span>
+                        <button class="theme-toggle" aria-label="Toggle theme">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#home" class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Portofolio</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#education">Pendidikan</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <button class="mobile-menu-btn" aria-label="Open mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="multiple-text"></h2>
+            <h1 class="hero-title"></h1>
+            <p class="hero-subtitle">"Work hard, pray hard, and be joyful in what you do."</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                <!-- <a href="/cv-peres-hendri.pdf" class="btn btn-secondary" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Mengenal lebih dekat dengan passion dan pengalaman saya</p>
+        
+        <div class="card">
+            <div class="about-profile">
+                <div class="profile-photo">
+                    <img src="/images/RISTEK-0815.jpg" alt="Peres Hendri Virgiawan" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--primary);">
+                </div>
+                <div class="profile-info">
+                    <h3 style="margin-bottom: 1rem; color: var(--primary);">Peres Hendri Virgiawan</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Mahasiswa Teknologi Informasi</strong></p>
+                    <p style="color: var(--text-secondary);">Mahasiswa Teknologi Informasi Universitas Telkom Surabaya yang aktif dan berdedikasi dalam pengembangan diri melalui organisasi kemahasiswaan. Memiliki pengalaman kepemimpinan sebagai Ketua Himpunan Mahasiswa Teknologi Informasi, serta terbukti mampu mengelola tim, memimpin program kerja strategis, dan menjembatani kolaborasi lintas divisi secara efektif.</p>
+                    <p style="color: var(--text-secondary); margin-top: 1rem;">Memiliki minat besar dan terus mengembangkan kompetensi dalam bidang Internet of Things (IoT), Keamanan Jaringan, dan Web Development. Terbiasa bekerja dalam lingkungan tim, mengelola proyek dari perencanaan hingga evaluasi, serta adaptif terhadap teknologi baru dan tantangan kompleks baik di lingkungan akademik maupun non-akademik.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <h4 style="margin-bottom: 1rem; color: var(--primary);">Keahlian Utama:</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Vue.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Git</span>
+                    <span class="tag">Figma</span>
+                </div>
+                
+                <div style="margin-top: 2rem; text-align: center;">
+                    <a href="/cv-peres-hendri.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        Download CV Lengkap
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Pengalaman Pendidikan</h2>
+        <p class="section-subtitle">Perjalanan pendidikan dan pencapaian akademik saya</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Agustus 2022 - Sekarang</div>
+                    <h3 class="timeline-title">UNIVERSITAS TELKOM SURABAYA</h3>
+                    <p class="timeline-description">TEKNOLOGI INFORMASI, IPK 3.81 / 4.00</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">Juni 2019 - Juni 2022</div>
+                    <h3 class="timeline-title">SMK NEGERI 3 BUDURAN</h3>
+                    <p class="timeline-description">Teknik Pemesinan (TPM)</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Pengalaman</h2>
+        <p class="section-subtitle">Perjalanan karir dan pengalaman profesional saya</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2024 - Sekarang</div>
+                    <h3 class="timeline-title">Senior Web Developer</h3>
+                    <p class="timeline-description">Mengembangkan aplikasi web modern menggunakan React dan Node.js. Bertanggung jawab atas arsitektur sistem dan mentoring junior developers.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <h3 class="timeline-title">Full Stack Developer</h3>
+                    <p class="timeline-description">Membangun aplikasi web end-to-end menggunakan Vue.js dan PHP. Mengoptimalkan performa dan user experience.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <h3 class="timeline-title">Frontend Developer</h3>
+                    <p class="timeline-description">Fokus pada pengembangan UI/UX yang responsif dan modern. Menggunakan HTML, CSS, JavaScript, dan berbagai framework.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Proyek Terbaru</h2>
+        <p class="section-subtitle">Beberapa proyek yang telah saya kerjakan</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">Platform e-commerce modern dengan fitur payment gateway dan inventory management.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Analytics Dashboard</h3>
+                    <p class="project-description">Dashboard analitik real-time dengan visualisasi data yang interaktif.</p>
+                    <div class="project-tags">
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Mobile App</h3>
+                    <p class="project-description">Aplikasi mobile hybrid dengan fitur offline-first dan push notifications.</p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Redux</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Game Development</h3>
+                    <p class="project-description">Game 2D platformer dengan physics engine dan multiplayer support.</p>
+                    <div class="project-tags">
+                        <span class="tag">Unity</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">Photon</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Chatbot</h3>
+                    <p class="project-description">Chatbot AI dengan natural language processing dan sentiment analysis.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cloud Management</h3>
+                    <p class="project-description">Sistem manajemen cloud dengan monitoring dan auto-scaling.</p>
+                    <div class="project-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Security Scanner</h3>
+                    <p class="project-description">Scanner keamanan web dengan vulnerability detection dan reporting.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OWASP</span>
+                        <span class="tag">Django</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Data Pipeline</h3>
+                    <p class="project-description">ETL pipeline untuk big data processing dan real-time analytics.</p>
+                    <div class="project-tags">
+                        <span class="tag">Apache Kafka</span>
+                        <span class="tag">Spark</span>
+                        <span class="tag">Elasticsearch</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo">Demo</a>
+                        <a href="#" class="code">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Network Security</h3>
+                    <p class="project-description">Mengembangkan sistem keamanan jaringan untuk memastikan integritas dan kerahasiaan data.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Cisco</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Windows</span>
+                        <span class="tag">Firewall</span>
+                        <span class="tag">VPN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-subtitle">Mari diskusikan proyek Anda atau sekedar menyapa</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:peress.hendriv@gmail.com">peress.hendriv@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+6285159452235">+62 851-5945-2235</a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/peresshendriiv" target="_blank">linkedin.com/in/peresshendriiv</a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/PeressHendri" target="_blank">github.com/PeressHendri</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <i class="fab fa-whatsapp"></i>
+                        Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#projects">Proyek</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <p>&copy; 2022 Peres Hendri Virgiawan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>Website ini menggunakan cookies untuk memberikan pengalaman terbaik. Dengan melanjutkan, Anda menyetujui penggunaan cookies kami.</p>
+            <div class="cookie-buttons">
+                <button class="accept-cookies" id="acceptCookies">Terima</button>
+                <button class="decline-cookies" id="declineCookies">Tolak</button>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
